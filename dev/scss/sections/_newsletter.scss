@@ -1,0 +1,44 @@
+/* =============
+    Newsletter
+============= */
+@use "../helpers";
+
+#newsletter{
+    padding: 40px 20px;
+
+    #newsletter-content{
+        padding: 60px 16px;
+        background-color: var(--lilyWhite);
+
+
+        p{
+            color: var(--grey);
+            font-weight: 600;
+            line-height: helpers.rem-calc(20);
+            margin: 16px 0;
+        }
+
+        form{
+            input{
+                border: none;
+                color: var(--grey);
+                font-weight: 600;
+                width: 100%;
+                padding: 24px 8px;
+                box-sizing: border-box;
+                border-radius: 8px;
+                margin-bottom: 16px;
+            }
+            
+            div{
+                text-align: right;
+            }
+        }
+        aside{
+            // Week 4 code
+            display: none;
+        }
+
+    }
+
+}
