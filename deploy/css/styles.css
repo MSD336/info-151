@@ -331,19 +331,6 @@ html {
 }
 
 /* ---------------- Media Queries ---------------- */
-h1, h2, h3, h4, h5, h6 {
-  margin: 0;
-  padding: 0;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-}
-ul li {
-  list-style: none;
-}
-
 .img-scaler {
   width: 100%;
 }
@@ -351,15 +338,6 @@ ul li {
 /* =============
     Typography
 ============= */
-body {
-  font-family: "Open Sans", sans-serif;
-}
-
-.section-title {
-  font-size: 3.125rem;
-  line-height: 4.0625rem;
-}
-
 /* =============
     Buttons
 ============= */
@@ -421,40 +399,26 @@ textarea {
 ============= */
 #hero {
   background-color: var(--lilyWhite);
-  padding: 56px 24px;
 }
 #hero section article h1 {
   color: var(--nightBlue);
 }
 #hero section article p {
   color: var(--gray);
-  font-weight: 600;
-  line-height: 1.75rem;
-  margin-top: 24px;
-  margin-bottom: 24px;
+}
+#hero section article a:link, #hero section article a:visited {
+  background-color: var(--nightBlue);
+  color: var(--white);
 }
 #hero section article button {
   background-color: var(--white);
   border: none;
-  height: 60px;
-  width: 60px;
-  border-radius: 100%;
-  margin-left: 30px;
 }
 #hero section #hero-card {
   background-color: var(--snowdrop);
-  margin-top: 70px;
-  padding: 24px 20px;
-  border-radius: 12px;
 }
 #hero section #hero-card h5 {
   color: var(--nightBlue);
-  font-weight: 600;
-  font-size: 0.875rem;
-}
-#hero section #hero-card p {
-  font-size: 0.875rem;
-  font-weight: 600;
 }
 
 /* =============
