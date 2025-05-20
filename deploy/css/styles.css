@@ -331,6 +331,19 @@ html {
 }
 
 /* ---------------- Media Queries ---------------- */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  list-style: none;
+}
+
 .img-scaler {
   width: 100%;
 }
@@ -338,9 +351,42 @@ html {
 /* =============
     Typography
 ============= */
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.section-title {
+  font-size: 3.125rem;
+  line-height: 4.0625rem;
+}
+
 /* =============
     Buttons
 ============= */
+a {
+  text-decoration: none;
+}
+
+.nightBlue-btn {
+  background-color: var(--nightBlue);
+  color: var(--white);
+  font-weight: 600;
+  font-size: 0.875rem;
+  padding: 22px 36px;
+  border: none;
+  border-radius: 6px;
+}
+
+.nightBlue-link {
+  background-color: var(--nightBlue);
+  color: var(--white);
+  font-weight: 600;
+  font-size: 0.875rem;
+  padding: 22px 36px;
+  border-radius: 6px;
+  display: inline-block;
+}
+
 /* =============
     Forms
 ============= */
@@ -375,24 +421,141 @@ textarea {
 ============= */
 #hero {
   background-color: var(--lilyWhite);
+  padding: 56px 24px;
 }
 #hero section article h1 {
   color: var(--nightBlue);
 }
 #hero section article p {
   color: var(--gray);
-}
-#hero section article a:link, #hero section article a:visited {
-  background-color: var(--nightBlue);
-  color: var(--white);
+  font-weight: 600;
+  line-height: 1.75rem;
+  margin-top: 24px;
+  margin-bottom: 24px;
 }
 #hero section article button {
   background-color: var(--white);
   border: none;
+  height: 60px;
+  width: 60px;
+  border-radius: 100%;
+  margin-left: 30px;
 }
 #hero section #hero-card {
   background-color: var(--snowdrop);
+  margin-top: 70px;
+  padding: 24px 20px;
+  border-radius: 12px;
 }
 #hero section #hero-card h5 {
   color: var(--nightBlue);
+  font-weight: 600;
+  font-size: 0.875rem;
+}
+#hero section #hero-card p {
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+/* =============
+    Packages
+============= */
+#packages {
+  background-color: var(--lilyWhite);
+  padding: 100px 24px;
+}
+#packages #top-content {
+  text-align: center;
+}
+#packages #top-content #package-button-container {
+  background-color: var(--white);
+  margin: 24px 0;
+  display: inline-block;
+  padding: 8px;
+  border-radius: 10px;
+}
+#packages #top-content #package-button-container button {
+  border: none;
+}
+#packages #top-content #package-button-container #left-arrow {
+  background-color: var(--white);
+  color: var(--grey);
+  padding: 13px 18px;
+}
+#packages #top-content #package-button-container #right-arrow {
+  background-color: var(--aqua);
+  color: var(--white);
+  padding: 13px 18px;
+  border-radius: 8px;
+}
+#packages #package-button-container {
+  background-color: var(--white);
+}
+#packages #package-button-container button {
+  border: none;
+}
+#packages #package-button-container #left-arrow {
+  background-color: var(--white);
+  color: var(--grey);
+}
+#packages #package-button-container #right-arrow {
+  background-color: var(--aqua);
+  color: var(--white);
+}
+#packages #package-card-container .package-card {
+  background-color: var(--ghost);
+  border: 1px solid var(--white);
+  margin-bottom: 40px;
+  padding: 16px;
+  border-radius: 14px;
+}
+#packages #package-card-container .package-card p {
+  color: var(--nightBlue);
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  margin: 20px 0 16px;
+}
+#packages #package-card-container .package-card h4 {
+  color: var(--grey);
+}
+#packages #package-card-container .package-card h3 {
+  color: var(--aqua);
+}
+#packages #package-card-container .selected {
+  background-color: var(--white);
+}
+
+/* =============
+    Newsletter
+============= */
+#newsletter {
+  padding: 40px 20px;
+}
+#newsletter #newsletter-content {
+  padding: 60px 16px;
+  background-color: var(--lilyWhite);
+}
+#newsletter #newsletter-content p {
+  color: var(--grey);
+  font-weight: 600;
+  line-height: 1.25rem;
+  margin: 16px 0;
+}
+#newsletter #newsletter-content form input {
+  border: none;
+  color: var(--grey);
+  font-weight: 600;
+  width: 100%;
+  padding: 24px 8px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+#newsletter #newsletter-content form div {
+  text-align: right;
+}
+#newsletter #newsletter-content aside {
+  display: none;
 }
