@@ -360,6 +360,12 @@ body {
   line-height: 4.0625rem;
 }
 
+.body-text {
+  color: var(--grey);
+  line-height: 1.75rem;
+  font-weight: 600;
+}
+
 /* =============
     Buttons
 ============= */
@@ -427,9 +433,6 @@ textarea {
   color: var(--nightBlue);
 }
 #hero section article p {
-  color: var(--gray);
-  font-weight: 600;
-  line-height: 1.75rem;
   margin-top: 24px;
   margin-bottom: 24px;
 }
@@ -454,7 +457,6 @@ textarea {
 }
 #hero section #hero-card p {
   font-size: 0.875rem;
-  font-weight: 600;
 }
 
 /* =============
@@ -511,8 +513,6 @@ textarea {
 }
 #packages #package-card-container .package-card p {
   color: var(--nightBlue);
-  font-weight: 600;
-  font-size: 1.25rem;
   line-height: 1.75rem;
   margin: 20px 0 16px;
 }
@@ -537,9 +537,6 @@ textarea {
   background-color: var(--lilyWhite);
 }
 #newsletter #newsletter-content p {
-  color: var(--grey);
-  font-weight: 600;
-  line-height: 1.25rem;
   margin: 16px 0;
 }
 #newsletter #newsletter-content form input {
@@ -558,4 +555,56 @@ textarea {
 }
 #newsletter #newsletter-content aside {
   display: none;
+}
+
+/* =============
+Communication
+============= */
+#communication {
+  padding: 40px 24px;
+}
+#communication p {
+  margin: 24px 0 48px;
+}
+
+/* =============
+    About
+============= */
+#about {
+  padding: 40px 24x;
+}
+#about section .about-body-text {
+  margin: 24px 0 40px;
+}
+#about section ul li h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: var(--nightBlue);
+}
+#about aside {
+  margin-top: 68px;
+}
+
+/* =============
+    Process
+============= */
+#process .process-body-text {
+  margin: 12px 0 24px;
+}
+#process ul li {
+  border: 1px solid var(--lilyWhite);
+  padding: 30px;
+  border-radius: 12px;
+  margin-bottom: 24px;
+  background-color: var(--white);
+}
+#process ul li h2 {
+  margin: 40px 0 12;
+  font-size: 1.5rem;
+  color: var(--nightBlue);
+}
+#process ul #shadow-card {
+  -webkit-box-shadow: 0 30px 50px rgba(3, 3, 37, 0.03);
+          box-shadow: 0 30px 50px rgba(3, 3, 37, 0.03);
 }
