@@ -1,0 +1,27 @@
+/* =============
+    Packages
+============= */
+/* =============
+    Mixins
+============= */
+/* =============
+    Variables
+============= */
+:root {
+  --black: #000000;
+  --white: #ffffff;
+  --ghostWhite: #f0faff;
+  --lilyWhite: #ecf9ff;
+  --snowdrop: #f9fdff;
+  --aqua: #00e6cc;
+  --nightBlue: #060640;
+  --grey: #9090a7;
+  --jaguar: #000020;
+}
+
+/* ---------------- Font Sizing ---------------- */
+html {
+  font-size: 100%;
+}
+
+/* ---------------- Media Queries ---------------- */
