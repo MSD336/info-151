@@ -1,3 +1,29 @@
 /* =============
     Buttons
 ============= */
+@use "../helpers";
+
+a {
+    text-decoration: none;
+}
+.nightBlue-btn{
+    background-color: var(--nightBlue);
+    color: var(--white);
+    font-weight: 600;
+    font-size: helpers.rem-calc(14);
+    padding: 22px 36px;
+    border: none;
+    border-radius: 6px;
+}
+
+.nightBlue-link{
+    background-color: var(--nightBlue);
+    color: var(--white);
+    font-weight: 600;
+    font-size: helpers.rem-calc(14);
+    padding: 22px 36px;
+    border-radius: 6px;
+    //code for week 4
+    display: inline-block;
+    //code for week 4
+}
