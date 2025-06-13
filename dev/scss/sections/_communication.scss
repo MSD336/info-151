@@ -4,9 +4,27 @@ Communication
 @use "../helpers";
 
 #communication{
-    padding: 40px 24px;
 
-    p{
-        margin: 24px 0 48px;
+    #communications-text{
+        text-align: center;
+        padding: 40px 24px;
+
+        p{
+            margin: 24px 0 48px;
+            text-align: center;
+        }
+    }
+
+    #communications-img{
+        @include helpers.md{
+            max-width: 800px;
+            padding: 0 24px;
+            margin: 0 auto;
+        }
+        @include helpers.xl{
+            max-width: 1200px;
+            padding: 24px 0;
+            margin: 0 auto;
+        }
     }
 }

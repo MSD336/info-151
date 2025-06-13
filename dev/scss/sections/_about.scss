@@ -5,6 +5,26 @@
 
 #about{
     padding: 40px 24x;
+
+    @include helpers.sm{
+        margin: 16px 8px;
+        display: grid;
+        grid-template-columns: 50% auto;
+    }
+
+    @include helpers.md{
+        margin: 0 16px;
+    }
+
+    @include helpers.lg{
+        margin: 0 24px;
+    }
+
+    @include helpers.xl{
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
     section{
 
         .about-body-text{
@@ -12,6 +32,17 @@
         }
 
         ul{
+
+            @include helpers.md{
+                display: grid;
+                grid-template-columns: 50% auto;
+                gap: 16px;
+            }
+
+            @include helpers.lg{
+                grid-template-columns: 100%;
+                gap: 24px;
+            }
 
             li{
 

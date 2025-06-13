@@ -6,9 +6,34 @@
 #process{
     .process-body-text{
         margin: 12px 0 24px;
+        text-align: center;
+        padding: 0 8px;
+    }
+
+    h1{
+        text-align: center;
     }
 
     ul{
+
+        @include helpers.md{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-areas: "imgCard1 imgCard1 imgCard2 imgCard2"
+                                 "imgCard3 imgCard3 imgCard3 imgCard3";
+            gap: 8px;
+            margin-bottom: -12px;
+        }
+        @include helpers.lg{
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-areas: "imgCard1 imgCard2 imgCard3";
+        }
+        @include helpers.xl{
+            margin: 0 auto;
+            max-width: 1200px;
+        }
+
+
         li{
             border: 1px solid var(--lilyWhite);
             padding: 30px;
@@ -22,7 +47,17 @@
             }
         }
 
-        #shadow-card{
+        #imgCard1{
+            grid-area: imgCard1;
+        }
+        #imgCard2{
+            grid-area: imgCard2;
+        }
+        #imgCard3{
+            grid-area: imgCard3;
+        }
+
+        .shadow-card{
             box-shadow: 0 30px 50px rgba(3, 3, 37, 0.03);
         }
     }

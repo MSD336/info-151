@@ -739,11 +739,27 @@ textarea {
 /* =============
 Communication
 ============= */
-#communication {
+#communication #communications-text {
+  text-align: center;
   padding: 40px 24px;
 }
-#communication p {
+#communication #communications-text p {
   margin: 24px 0 48px;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  #communication #communications-img {
+    max-width: 800px;
+    padding: 0 24px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1200px) {
+  #communication #communications-img {
+    max-width: 1200px;
+    padding: 24px 0;
+    margin: 0 auto;
+  }
 }
 
 /* =============
@@ -752,8 +768,49 @@ Communication
 #about {
   padding: 40px 24x;
 }
+@media (min-width: 576px) {
+  #about {
+    margin: 16px 8px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% auto;
+    grid-template-columns: 50% auto;
+  }
+}
+@media (min-width: 768px) {
+  #about {
+    margin: 0 16px;
+  }
+}
+@media (min-width: 992px) {
+  #about {
+    margin: 0 24px;
+  }
+}
+@media (min-width: 1200px) {
+  #about {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
 #about section .about-body-text {
   margin: 24px 0 40px;
+}
+@media (min-width: 768px) {
+  #about section ul {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% 16px auto;
+    grid-template-columns: 50% auto;
+    gap: 16px;
+  }
+}
+@media (min-width: 992px) {
+  #about section ul {
+    -ms-grid-columns: 100%;
+    grid-template-columns: 100%;
+    gap: 24px;
+  }
 }
 #about section ul li h2 {
   font-size: 1.25rem;
@@ -770,6 +827,36 @@ Communication
 ============= */
 #process .process-body-text {
   margin: 12px 0 24px;
+  text-align: center;
+  padding: 0 8px;
+}
+#process h1 {
+  text-align: center;
+}
+@media (min-width: 768px) {
+  #process ul {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 8px 1fr 8px 1fr 8px 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    -ms-grid-rows: auto 8px auto;
+        grid-template-areas: "imgCard1 imgCard1 imgCard2 imgCard2" "imgCard3 imgCard3 imgCard3 imgCard3";
+    gap: 8px;
+    margin-bottom: -12px;
+  }
+}
+@media (min-width: 992px) {
+  #process ul {
+    -ms-grid-columns: (1fr)[3];
+    grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: "imgCard1 imgCard2 imgCard3";
+  }
+}
+@media (min-width: 1200px) {
+  #process ul {
+    margin: 0 auto;
+    max-width: 1200px;
+  }
 }
 #process ul li {
   border: 1px solid var(--lilyWhite);
@@ -783,7 +870,50 @@ Communication
   font-size: 1.5rem;
   color: var(--nightBlue);
 }
-#process ul #shadow-card {
+#process ul #imgCard1 {
+  grid-area: imgCard1;
+}
+#process ul #imgCard2 {
+  grid-area: imgCard2;
+}
+#process ul #imgCard3 {
+  grid-area: imgCard3;
+}
+@media (min-width: 768px) {
+  #process ul #imgCard1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+  }
+  #process ul #imgCard2 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 3;
+  }
+  #process ul #imgCard3 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 7;
+  }
+}
+@media (min-width: 992px) {
+  #process ul #imgCard1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+  }
+  #process ul #imgCard2 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+  }
+  #process ul #imgCard3 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+  }
+}
+#process ul .shadow-card {
   -webkit-box-shadow: 0 30px 50px rgba(3, 3, 37, 0.03);
           box-shadow: 0 30px 50px rgba(3, 3, 37, 0.03);
 }
