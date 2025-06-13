@@ -6,32 +6,63 @@
 #hero{
     background-color: var(--lilyWhite);
     padding: 56px 24px;
-    section{
 
-        article{
-            h1{
-                color: var(--nightBlue);
+    @include helpers.xl{
+        padding: 100px 24px;
+    }
+
+    #hero-content-container{
+        @include helpers.md{
+            display: grid;
+            grid-template-areas: "hero-img"
+                                 "hero-content";
+        }
+
+        @include helpers.xl{
+            grid-template-columns: 40% auto;
+            grid-template-areas: "hero-content hero-img";
+
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        section{
+            @include helpers.md{
+                grid-area: hero-content;
+                padding: 0 15vw;
             }
 
-            p{
-                margin-top: 24px;
-                margin-bottom: 24px;
+            @include helpers.lg{
+                padding: 0 25vw;
             }
+
+            @include helpers.xl{
+                padding: 0;
+            }
+
+            article{
+                h1{
+                    color: var(--nightBlue);
+                }
+
+                p{
+                    margin-top: 24px;
+                    margin-bottom: 24px;
+                }
 
             
 
-            button{
-                background-color: var(--white);
-                border: none;
-                height: 60px;
-                width: 60px;
-                border-radius: 100%;
-                margin-left: 30px;
+                button{
+                    background-color: var(--white);
+                    border: none;
+                    height: 60px;
+                    width: 60px;
+                    border-radius: 100%;
+                    margin-left: 30px;
+                }
             }
 
-        }
-
-        #hero-card{
+            #hero-card{
                 background-color: var(--snowdrop);
                 margin-top: 70px;
                 padding: 24px 20px;
@@ -45,9 +76,14 @@
                 p{
                     font-size: helpers.rem-calc(14);
                 }
+            }
         }
 
+        aside{
+            @include helpers.md{
+                grid-area: hero-img;
+            }
+        }
     }
-
 
 }

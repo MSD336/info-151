@@ -4,36 +4,75 @@
 @use "../helpers";
 
 #newsletter{
-    padding: 40px 20px;
+
+    margin-bottom: 100px;
 
     #newsletter-content{
-        padding: 60px 16px;
         background-color: var(--lilyWhite);
 
+        @include helpers.md{
+            padding: 60px 20px;
+        }
 
         p{
             margin: 16px 0;
         }
 
-        form{
-            input{
-                border: none;
-                color: var(--grey);
-                font-weight: 600;
-                width: 100%;
-                padding: 24px 8px;
-                box-sizing: border-box;
-                border-radius: 8px;
-                margin-bottom: 16px;
+        @include helpers.lg{
+            display: grid;
+            padding: 0px 0px;
+            grid-template-columns: 60% auto;
+            gap: 60px;
+        }
+
+        @include helpers.xl{
+            max-width: 1200px;
+            margin: 0 auto;
+            grid-template-columns: 65% auto;
+        }
+
+        #newsletter-left{
+
+            @include helpers.lg{
+                padding: 60px 0 60px 60px;
             }
-            
-            div{
-                text-align: right;
+
+            p{
+                margin: 15px 0;
+            }
+
+            form{
+                input{
+                    border: none;
+                    color: var(--grey);
+                    font-weight: 600;
+                    width: 100%;
+                    padding: 24px 8px;
+                    box-sizing: border-box;
+                    border-radius: 8px;
+                    margin-bottom: 16px;
+                }
+                div{
+                    text-align: right;
+                }
             }
         }
+
+
         aside{
             // Week 4 code
             display: none;
+
+
+            @include helpers.lg{
+                display: block;
+                margin-top: -50px;
+                
+            }
+
+            img{
+                object-fit: cover;
+            }
         }
 
     }

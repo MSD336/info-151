@@ -24,3 +24,11 @@ ul{
 .img-scaler{
     width: 100%;
 }
+
+.content-padding{
+    padding: 40px 24px;
+
+    @include helpers.xl{
+        padding: 100px 24px;
+    }
+}
