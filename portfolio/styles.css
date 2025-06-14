@@ -1,30 +1,63 @@
-/* universal styling starts here */
+:root {
+  --brightRed: #d74a49;
+  --coldBlue:  #487fc6;
+  --darkBlue:  #1b4552;
+  --iron:      #8ba0a4;
+  --offWhite:  #eaeaea;
+}
+
+/* Apply background color to body instead of :root */
+body {
+  background-color: var(--darkBlue);
+  font-family: "Open Sans", sans-serif !important;
+}
+
+#nav-bar{
+  
+}
+
+/* Link styling */
+a:link,
+a:visited {
+  text-decoration: none;
+  color: var(--coldBlue);
+}
+
+a:hover,
+a:active {
+  text-decoration: none;
+  color: var(--brightRed);
+}
+
+/* List styling */
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-.right{
-    float:right;
+ul li p{
+  color: var(--offWhite);
 }
 
-.left{
-    float: left;
+h1, h2, h3, h4, h5, p{
+  color: var(--offWhite);
 }
 
-body{
-  font-family: "Open Sans", sans-serif !important;
+/* Section header styling flattened */
+section .header {
+  color: var(--brightRed);
+  font-size: 4em;
 }
 
-
-
-/* universal styling ends here */
-
-#index{
-
+section{
+  text-align: center;
+  margin: 0 40px;
 }
 
-#about{
+/* Empty ID rules (optional cleanup) */
+#index {
+}
 
+#about {
 }
