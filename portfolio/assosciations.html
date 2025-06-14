@@ -8,18 +8,22 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="styles.css">
+        <script src="scripts.js"></script>
     </head>
     <body>
       <!-- navigation bar -->
         <div id="nav-bar">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="assosciations.html">Assosciations</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+            <div id="nav-container">
+                <div><button id="burger">&#9776;</button></div>
+                <ul id="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="assosciations.html">Assosciations</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
         </div>
         <!-- Section is for the rest of content -->
 
@@ -28,23 +32,23 @@
             <h1 class="header">Assosciations</h1>
 
             <ul>
-                <li><h2>W.W. Hagerty Library - LITS Work Study</h2></li>
+                <li><h2 class="subcategory">W.W. Hagerty Library - LITS Work Study</h2></li>
+                <li>
+                    <a href="https://www.library.drexel.edu/"><img src="../img/drexel-libraries.png" alt="Drexel Libraries" class="assosciation-img"></a>
+                <li>
                 <li>
                     <p>Drexel's Library, home of the Dragons Learning Den, Drexel Archives, and employed here approximately 4 months as part of work study position. Work largely involved assistant IT tasks and data entry.</p>
                 </li>
-                <li>
-                    <a href="https://www.library.drexel.edu/"><img src="../img/drexel-libraries.png" alt="Drexel Libraries"></a>
-                <li>
             </ul>
 
             <ul>
-                <li><h2>Brownstein Group</h2></li>
+                <li><h2 class="subcategory">Brownstein Group</h2></li>
+                <li>
+                    <a href="https://www.brownsteingroup.com/"><img src="../img/brownstein.png" alt="Brownstein Group" class="assosciation-img"></a>
+                <li>
                 <li>
                     <p>The Brownstein Group is a marketing and brand relations agency. They work in advertising and advising with companies like GIANT, Wawa, Legoland, and La Colombe. In the interview process for an IT position.</p>
                 </li>
-                <li>
-                    <a href="https://www.brownsteingroup.com/"><img src="../img/brownstein.png" alt="Brownstein Group" class="button-img"></a>
-                <li>
             </ul>
 
         </section>

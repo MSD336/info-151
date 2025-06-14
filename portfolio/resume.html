@@ -8,95 +8,114 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="styles.css">
+        <script src="scripts.js"></script>
     </head>
-   <body>
+    <body>
       <!-- navigation bar -->
         <div id="nav-bar">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="assosciations.html">Assosciations</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+            <div id="nav-container">
+                <div><button id="burger">&#9776;</button></div>
+                <ul id="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="assosciations.html">Assosciations</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
         </div>
       <!-- Section is for the rest of content -->
       <section id="resume">
-               <h1>Manraj Dhami</h1>
+               <h1 class="header">Manraj Dhami</h1>
                <h2>
                   732-293-8700 | <a href="mailto:msdhami06@gmail.com">msdhami06@gmail.com</a> | <a href="https://www.linkedin.com/in/manraj-dhami-416694364/" target="_blank">LinkedIn</a>
                </h2>
             <section>
-                <h2>Education</h2>
-                <h2>Drexel University</h2>
-                <h2>Computer Science BS/CS</h2>
-                <h2>Graduating 2029</h2>
-                <h2>Philadelphia, PA</h2>
+                <h2 class="category">Education</h2>
+                <div class="resume-grid">
+                    <h2>Drexel University</h2>
+                    <h2>Computer Science BS/CS</h2>
+                    <h2>Graduating 2029</h2>
+                    <h2>Philadelphia, PA</h2>
+                </div>
+
             </section>
             <section>
-                <h2>Experience</h2>
-                <h2>Library Technology Systems Assistant</h2>
-                <h2>W. W. Hagerty Library</h2>
-                <h2>Mar. 2025 – Present</h2>
-                <h2>Philadelphia, PA</h2>
+                <h2 class="category">Experience</h2>
+                <div class="resume-grid">
+                    <h2>Library Technology Systems Assistant</h2>
+                    <h2>W. W. Hagerty Library</h2>
+                    <h2>Mar. 2025 – Present</h2>
+                    <h2>Philadelphia, PA</h2>
+                </div>
                 <ul>
-                     <li><p>Troubleshooting technical difficulties library equipment</p></li>
-                     <li><p>Installing, updating, and removing software from computers</p></li>
-                     <li><p>Diagnosing hardware failures in computers and issuing replacements</p></li>
-                     <li><p>Data entry and verification</p></li>
-                     <li><p>Assisting Senior Technology Systems staff with high priority work</p></li>
+                     <li><p>- Troubleshooting technical difficulties library equipment</p></li>
+                     <li><p>- Installing, updating, and removing software from computers</p></li>
+                     <li><p>- Diagnosing hardware failures in computers and issuing replacements</p></li>
+                     <li><p>- Data entry and verification</p></li>
+                     <li><p>- Assisting Senior Technology Systems staff with high priority work</p></li>
                 </ul>
             </section>
             <section>
-                <h2>Projects</h2>
-                <h2>Task List Website</h2>
-                <h2>Oct. 2024</h2>
+                <h2 class="category">Projects</h2>
+                <div class="resume-grid">
+                    <h2>Task List Website</h2>
+                    <h2>Oct. 2024</h2>
+                </div>
                 <ul>
-                    <li><p>Created functional presentable MVP during the span of 3 Day Hackathon</p></li>
-                    <li><p>Used experience with HTML and CSS with learning Javascript</p></li>
+                    <li><p>- Created functional presentable MVP during the span of 3 Day Hackathon</p></li>
+                    <li><p>- Used experience with HTML and CSS with learning Javascript</p></li>
                 </ul>
-                    <h2>MUKD Password Manager<h2>
+                <div class="resume-grid">
+                    <h2>MUKD Password Manager</h2>
                     <h2>Jan. 2025 – Present</h2>
+                </div>
                 <ul>
-                    <li><p>Java password security software developed by team of 4</p></li>
-                    <li><p>Developing front-end in Java Swing and integrating with back-end</p></li>
+                    <li><p>- Java password security software developed by team of 4</p></li>
+                    <li><p>- Developing front-end in Java Swing and integrating with back-end</p></li>
                 </ul>
-                <h2>Godot Tower Defense Demo</h2>
-                <h2>Feb. 2024</h2>
+                <div class="resume-grid">
+                    <h2>Godot Tower Defense Demo</h2>
+                    <h2>Feb. 2024</h2>
+                </div>
                 <ul>
-                    <li><p>Developed short Godot project with game behavior written in GDScript</p></li>
-                    <li><p>Created documentation and pseudocode alongside project for presentation</p></li>
+                    <li><p>- Developed short Godot project with game behavior written in GDScript</p></li>
+                    <li><p>- Created documentation and pseudocode alongside project for presentation</p></li>
                 </ul>
             </section>
             <section>
-                <h2>Skills</h2>
-                <h3>Web Development</h3>
-                <ul>
-                    <li><p>HTML</p></li>
-                    <li><p>CSS</p></li>
-                    <li><p>Javascript</p></li>
-                    <li><p>Figma</p></li>
-                </ul>
+                <h2 class="category">Skills</h2>
+                <h3 class="subcatergory">Web Development</h3>
 
-                <h3>Programming & Game Development</h3>
-                <ul>
-                    <li><p>Python</p></li>
-                    <li><p>Java</p></li>
-                    <li><p>Java Swing</p></li>
-                    <li><p>Godot</p></li>
-                    <li><p>GDScript</p></li>
-                </ul>
+                <div class="resume-grid">
+                    <p>HTML</p>
+                    <p>CSS</p>
+                    <p>Javascript</p>
+                    <p>Figma</p>
+                </div>
 
-                <h3>I.T. Assistance and Maintenance</h3>
-                <ul>
-                    <li><p>Hardware Troubleshooting</p></li>
-                    <li><p>Software Troubleshooting</p></li>
-                    <li><p>Data Entry</p></li>
-                </ul>
+
+                <h3 class="subcategory">Programming & Game Development</h3>
+                <div class="resume-grid">
+                    <p>Python</p>
+                    <p>Java</p>
+                    <p>Java Swing</p>
+                    <p>Godot</p>
+                    <p>GDScript</p>
+                </div>
+
+                <h3 class="subcategory">I.T. Assistance and Maintenance</h3>
+                <div class="resume-grid">
+                    <p>Hardware Troubleshooting</p>
+                    <p>Software Troubleshooting</p>
+                    <p>Data Entry</p>
+                    <p>Godot</p>
+                    <p>GDScript</p>
+                </div>
 
             </section>
 
-            <h1><a href="../data/resume.pdf" download="ManrajDhamiResume.pdf">Download my resume (PDF)</a></h1>
+            <h1><a href="../data/resume.pdf" download="ManrajDhamiResume.pdf" class="downloadbutton">Download my resume (PDF)</a></h1>
    </body>
 </html>
