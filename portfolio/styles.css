@@ -1,0 +1,25 @@
+/* universal styling starts here */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.right{
+    float:right;
+}
+
+.left{
+    float: left;
+}
+
+
+/* universal styling ends here */
+
+#index{
+
+}
+
+#about{
+
+}
