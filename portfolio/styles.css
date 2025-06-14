@@ -1,63 +1,123 @@
 :root {
-  --brightRed: #d74a49;
-  --coldBlue:  #487fc6;
-  --darkBlue:  #1b4552;
-  --iron:      #8ba0a4;
-  --offWhite:  #eaeaea;
+	--brightRed: #d74a49;
+	--coldBlue: #487fc6;
+	--darkBlue: #1b4552;
+	--iron: #8ba0a4;
+	--offWhite: #eaeaea; 
+  --sm: 576px;
+	--md: 768px;
+	--lg: 992px;
+	--xl: 1200px;
 }
 
-/* Apply background color to body instead of :root */
 body {
-  background-color: var(--darkBlue);
-  font-family: "Open Sans", sans-serif !important;
+	padding: 60px 0;
+	background-color: var(--darkBlue);
+	font-family: "Open Sans", sans-serif !important;
+	line-height: 1.6;
+	font-weight: 500;
+	min-height: 100vh;
+	margin: 0;
 }
 
-#nav-bar{
-  
+#nav-bar {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background-color: var(--brightRed);
+	box-shadow: 0 2px 3px hex(#13131348);
 }
 
-/* Link styling */
+/* Navigation list */
+#nav-bar ul {
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 60px;
+	gap: 30px;
+}
+
+/* Navigation links */
+#nav-bar ul li a {
+	color: white;
+	text-decoration: none;
+	font-size: 1rem;
+	padding: 8px 12px;
+	transition: background-color 0.3s ease;
+}
+
+#nav-bar ul li a:hover {
+	background-color: rgba(255, 255, 255, 0.2);
+	border-radius: 4px;
+}
+
 a:link,
 a:visited {
-  text-decoration: none;
-  color: var(--coldBlue);
+	text-decoration: none;
+	color: var(--coldBlue);
 }
 
 a:hover,
 a:active {
-  text-decoration: none;
-  color: var(--brightRed);
+	text-decoration: none;
+	color: var(--brightRed);
 }
 
-/* List styling */
 ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
 }
 
-ul li p{
-  color: var(--offWhite);
+ul li p {
+	color: var(--offWhite);
 }
 
-h1, h2, h3, h4, h5, p{
-  color: var(--offWhite);
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+	color: var(--offWhite);
 }
 
-/* Section header styling flattened */
 section .header {
-  color: var(--brightRed);
-  font-size: 4em;
+	color: var(--brightRed);
+	font-size: 4em;
 }
 
-section{
-  text-align: center;
-  margin: 0 40px;
+.scaler {
+	max-width: 1200px;
+	width: 25%;
 }
 
-/* Empty ID rules (optional cleanup) */
-#index {
+section {
+	text-align: center;
+	margin: 0 auto;
+	padding: 0 5%;
 }
 
-#about {
+#display-area {
+	border: 1px solid #d74a49;
+	margin: 32px 48px;
+	padding: 32px;
+	background-image: url("../img/topo.svg");
 }
+
+#personal-logo {
+	border-radius: 100%;
+	background-color: var(--iron);
+	background-size: cover;
+	margin-top: 5px;
+	min-height: 64px;
+	min-width: 64px;
+}
+
+.logo {
+	width: 40px;
+	height: 40px;
+}
+
+#hamburger {}
