@@ -13,6 +13,11 @@ ul {
     float: left;
 }
 
+body{
+  font-family: "Open Sans", sans-serif !important;
+}
+
+
 
 /* universal styling ends here */
 
