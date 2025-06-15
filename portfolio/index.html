@@ -9,6 +9,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="styles.css">
         <script src="scripts.js"></script>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     </head>
     <body>
       <!-- navigation bar -->
@@ -29,9 +30,8 @@
         <!-- Section is for the rest of content -->
 
         <section id="index">
-
             <!-- Personal Logo, in place of image of myself -->
-            <div id="display-area">
+            <div id="display-area" data-aos="fade-zoom-in"  data-aos-easing="ease-in-back">
                 <img src="../img/personallogo.png" alt="My Logo" id="personal-logo" class="scaler">
             </div>
         
@@ -57,5 +57,9 @@
             </p>
 
         </section>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </body>
 </html>
