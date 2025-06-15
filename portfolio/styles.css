@@ -147,6 +147,7 @@ ul {
 
 ul li p {
   color: var(--offWhite);
+  margin: 0 20%;
 }
 
 h1, h2, h3, h4, h5, p {
@@ -170,22 +171,48 @@ section {
   padding: 0 5%;
 }
 
-#display-area {
-  border: 1px solid var(--brightRed);
-  margin: 32px 48px;
-  padding: 32px;
-  background-image: url("../img/topo.svg");
-  border-radius: 24px;
-}
-
 #personal-logo {
+  border: var(--brightRed) 2px solid;
   border-radius: 100%;
   background-color: var(--iron);
   background-size: cover;
   margin-top: 5px;
   min-height: 64px;
   min-width: 64px;
+
 }
+
+#display-area {
+  border: 1px solid var(--brightRed);
+  margin: 32px 48px;
+  padding: 32px;
+  background-image: url("../img/topo.png");
+  background-size: cover;
+  background-position: center;
+  border-radius: 24px;
+}
+
+@media (max-width: 768px) {
+  #display-area{
+    margin: 10px;
+    padding: 5px;
+    width: 140px;
+    margin: 0 auto;
+    margin-top: 15px;
+    
+  }
+  .scaler{
+    max-width: 480px;
+    max-height: 480px;
+  }
+  #personal-logo{
+    height: 120px;
+    width: 120px;
+
+  }
+}
+
+
 
 .logo {
   width: 48px;
@@ -196,12 +223,14 @@ section {
   padding-bottom: 10px;
   margin: 0 20%;
   border-bottom: 2px var(--brightRed) solid;
+  margin-bottom: 32px;
 }
 
 .subcategory{
   padding-bottom: 5px;
   margin: 0 25%;
   border-bottom: 1px var(--brightRed) solid;
+  margin-bottom: 16px;
 }
 
 .resume-grid {
@@ -239,4 +268,29 @@ section {
   padding: 8px;
   border: 1px solid var(--brightRed);
   border-radius: 8px;
+}
+
+#disclaimer{
+  font-size: 0.6em;
+  margin: 40px;
+  margin-bottom: -40px;
+}
+
+#about p{
+  margin: 0 30%;
+}
+
+ul li a {
+  color: var(--darkBlue);
+  display: block;
+  padding: 8px 15px;
+  border-radius: 5px;
+  margin: 10px 35%;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+ul li a:hover {
+  background-color: var(--coldBlue);
+  color: var(--offWhite);
 }
